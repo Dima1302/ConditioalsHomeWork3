@@ -15,6 +15,7 @@ public class Main {
             System.out.println(" Установите версию приложения для Android по ссылке ");
         }
     }
+
     public static void task2() {
         int phoneProduced = 2012;
         int clientOS = 1;
