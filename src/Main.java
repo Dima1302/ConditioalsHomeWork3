@@ -5,6 +5,7 @@ public class Main {
         task3();
         task5();
         task4();
+        task6();
     }
     public static void task1() {
         int clientOS = 0;
@@ -82,4 +83,12 @@ public class Main {
                 System.out.println("Неправильно указан месяц");
         }
     }
+  public static void task6 () {
+        int p = 5;
+        if (p % 2 == 0 && p != 0) {
+            System.out.println(p + " - четное число");
+        } else {
+            System.out.println(p + " - нечетное число");
+        }
+  }
 }
