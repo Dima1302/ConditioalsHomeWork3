@@ -111,8 +111,6 @@ public class Main {
         double baseRate = 0.1;
         int loanTerms = 12;
         int maxMonthlyPayment = salary/2;
-        int amountPerYear = (int) (wantedSum + wantedSum * baseRate);
-        int averageMonthlyPayment = amountPerYear / loanTerms;
         if (age < 23) {
             baseRate = baseRate + 0.01;
         } else if (age < 30) {
@@ -121,6 +119,8 @@ public class Main {
         } if (salary > 80_000) {
             baseRate = baseRate - 0.007; // не совсем понял как учесть ставку.Кажется у меня она не учитывается.
         }
+        int amountPerYear = (int) (wantedSum + wantedSum * baseRate);
+        int averageMonthlyPayment = amountPerYear / loanTerms;
         if( maxMonthlyPayment > averageMonthlyPayment) {
             System.out.println(" Максимальный платеж при ЗП равен " + maxMonthlyPayment +  " рублей. Платеж по кредиту " + averageMonthlyPayment +  "рублей. Одобрено ");
         } else {
